@@ -105,8 +105,8 @@ public static class Car {
 //HW 02 Q4. Calculator
 // Create a class "Calculator"
 // It must only have a default constructor (Which means no parameter)
-// It must have a method called add, subtract, multiply, and divide.
-// The methods should take only two parameters, num1 and num2
+// It must have a method called add, subtract, multiply, and divide. 
+// The methods should take only two parameters, num1 and num2. (for example, public int add(int num1, int num2){})
 // Also, add, subtract, multiply, and divide method must be overloaded. The difference is that
 // Their parameter type should be different (For example, double and int)
 // In your default constructor, you must initiallize its private Boolean attribute "isPowerOn" to true.
