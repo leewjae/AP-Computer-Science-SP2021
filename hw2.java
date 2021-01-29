@@ -10,16 +10,22 @@ public class hw2 {
     /** Default constructor.
     * Constructs bank account with default values. */ 
     public BankAccount()
-    { /* implementation code */ }
+    { 
+      password = "";
+      balance = 0.0;
+    }
     /** Constructs bank account with specified password and balance. */ 
     public BankAccount(String acctPassword, double acctBalance)
-    { /* implementation code */ }
+    { 
+      password = acctPassword;
+      balance = acctBalance;
+     }
     //accessor
     /** @return balance of this account */ 
     public double getBalance(){ 
       /* implementation code */ 
-      return 1;
-      }
+
+    }
 
     //mutators
     /** Deposits amount in bank account with given password.
@@ -38,20 +44,53 @@ public class hw2 {
 
     }
 
-//HW 02 Q2. Bank Account
+//HW 02 Q2. Color
 // Color is composed of three values; red, green, and blue.
-// Your task is to create Color class that has appropriate private attriutes, public getters, and setters.
+// Your task is to create Color class that has appropriate private attriutes,
+// public getters, and setters.
 
   public static class Color {
-     /** Default constructor.
-    * Constructs bank account with default values. */ 
-    public Color()
-    { /* implementation code */ }
-    /** Constructs color object with specified red, green, and blue value*/ 
-    public Color(int r, int g, int b)
-    { /* implementation code */ }
 
-    // Please define Your methods here
+    private int red ;
+    private int green;
+    private int blue;
+
+
+    public Color() { 
+      red = 0;
+      green = 0;
+      blue = 0;
+    }
+    /** Constructs color object with specified red, green, and blue value*/ 
+    public Color(int r, int g, int b) {
+      red = r;
+      green = g;
+      blue = b;
+    }
+
+    public int getRed(){
+      return red;
+    }
+
+    public int getGreen(){
+      return green;
+    }
+
+    public int getBlue(){
+      return blue;
+    }
+
+    public void setRed(int r){
+      red = r;
+    }
+
+    public void setGreen(int g){
+      green = g;
+    }
+
+    public void setBlue(int b){
+      blue = b;
+    }
   }
 
 //HW 02 Q3. Car
@@ -116,7 +155,6 @@ public static class Calculator {
 
   //You can use your main method as a debugging purpose
   public static void main(String args[]) {
-    BankAccount b = new BankAccount();
-    System.out.println(b.getBalance());
+    Color color = new Color(1,2,3);
   }
 }
