@@ -277,6 +277,82 @@ public class hw3Answer {
 
 	//HW3.3 Ends Here
 
+	// HW3.4 Cars!
+	// Create a class "AICar" and "ManualCar".
+	// They should inherit the provided abstract class Car.
+	// Do not edit the provided class Car.
+	// AICar class should override the method "drive" and it should print "AI car is runnig."
+	// AICar class should override the method "stop" and it should print "AI car stopped."
+	// ManualCar class should have private String attribute "driver".
+	// ManualCar class should contain its unique method "driverName" and it should print string “Driver is (driver).” For example, if string “driver” is set as “John” in the constructor, the method driverName should print “Driver is John.”.
+	// ManualCar class should override the method "drive" and it should print "A man drives a car."
+	// ManualCar class should override the method "stop" and it should print "A man stopped a car."
+	// Hint: You should declare an appropriate constructor for ManualCar class.
+
+public abstract class Car{
+	public String type = "Vehicle";
+	public abstract void drive();
+	public abstract void stop();
+}
+
+//Answer
+
+// public class AICar extends Car {
+// 	public void drive(){
+// 		system.out.println(“AI Car is running.”);
+// 	}
+// 	public void stop(){
+// 		system.out.println(“AI Car stopped.”);
+// 	}
+// }
+
+// public class ManualCar extends Car{
+//     private String driver;
+// public ManualCar(String name){
+// driver=name;
+// }
+// public void drive(){
+// 	system.out.println(“A man drives a car.”);
+// }
+// public void stop(){
+// 	system.out.println(“A man stopped a car.”);
+// }
+// 	public void driver(){
+// 		System.out.println(“Driver is “+driver+”.”);
+// 	}
+// }
+
+// HW3.4 Ends Here
+
+// HW3.5 Animal Farm!
+// An interface is a completely "abstract class"
+// that is used to group related methods with empty bodies:
+// Create three classees that implements the interface Animal. 
+
+interface Animal {
+  public void animalSound(); // interface method (does not have a body)
+  public void sleep(); // interface method (does not have a body)
+}
+
+// NOTE: Your animalSound() method should print different messages for
+// each of the classes. For example, dogs and cats have different sounds.
+// NOTE: Your sleep() method should also print different messages for 
+// for each of the classes. You are welcome to add more methods in Animal
+// Interface, however,you should not delete animalSound() and sleep().
+
+// Pig "implements" the Animal interface
+// Example
+	class Pig implements Animal {
+	  public void animalSound() {
+	    // The body of animalSound() is provided here
+	    System.out.println("The pig says: wee wee");
+	  }
+	  public void sleep() {
+	    // The body of sleep() is provided here
+	    System.out.println("Zzz");
+	  }
+	}
+
 
 	public static void main(String args[]) {
 		//Debug for Q1.
